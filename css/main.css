@@ -180,7 +180,7 @@ button:hover {color: white}
 /* slide over group 2 */
 #group1 {z-index: 5}
 #group1 .parallax__layer--base {
-  background-image: url('./img/laptop-coffee_cropped--deep-brackground.jpg');
+  background-image: url('../img/laptop-coffee_cropped--deep-brackground.jpg');
 }
 
 /* slide under groups 1 and 3 */
@@ -193,7 +193,7 @@ button:hover {color: white}
 /* slide over group 2 and 4 */
 #group3 {z-index: 4}
 #group3 .parallax__layer--base {
-  background-image: url('./img/guitar_cropped--background.jpg');
+  background-image: url('../img/guitar_cropped--background.jpg');
 }
 
 /* slide under group 3 and 5 */
