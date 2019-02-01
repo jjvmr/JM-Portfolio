@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>A grouped pure CSS parallax demo by Keith Clark</title>
+    <meta name="description" content="Demonstration of grouping content in pure CSS parallax scrolling website">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Raleway" rel="stylesheet">
+  </head>
+  
+  <body>
+  
+    <div id="navbar-block">
+      <div class='navbar-elements'>
+        <div class="nav-title">
+          <h4>Software Developer Portfolio</h4>
+        </div>
+        <div class="navbar-buttons">
+          <button onClick="document.getElementById('about-me').scrollIntoView({behavior: 'smooth'})">
+            About Me
+          </button>
+          <button onClick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+            Projects
+          </button>
+          <button onClick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+            Contact
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class='back-to-top'>
+      <button class="back-button" onClick="document.getElementById('top').scrollIntoView({behavior: 'smooth'})">
+          ↑
+      </button>
+    </div>
+  
+    <div class="parallax">
+      <div id="group1" class="parallax__group">
+        <div class="parallax__layer parallax__layer--base" id='top'>
+          <div class="title">
+            <h1>JOSE MAMANI</h1>
+            <img src="../img/profilepic-square.jpg">
+          </div>
+        </div>
+      </div>
+      
+      <div id="group2" class="parallax__group">
+        <div class="parallax__layer parallax__layer--base" id='about-me'>
+          <div class="title block">
+            <div class='content box'>
+              <h3 class="heading-3">Info</h3>
+              <ul>
+                <li class="list">Software Developer located in Winnipeg, Manitoba</li>
+                <li class="list">Experience using React framework and libraries implementation</li>
+              </ul>
+            </div>
+            <div class='content box'>
+              <h3 class="heading-3">Me</h3>
+              <p class="content">
+                I love playing the guitar   
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="parallax__layer parallax__layer--back">
+          <div class="title">
+              <div id='back-canvas'></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="group3" class="parallax__group">
+        <div class="parallax__layer parallax__layer--fore">
+          <div class="title">
+              <div id='back-canvas'>
+                <a target='_blank' href="https://jjvmr.github.io/memory-game/" class="memory-game">Memory Game</a>
+                <div>
+                  <img class='projects' src="../img/memory-game--cropped.jpg" alt="">
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="parallax__layer parallax__layer--base" id='projects'>
+          <div class="title">
+            
+          </div>
+        </div>
+      </div>
+
+      <div id="group5" class="parallax__group">
+        <div class="parallax__layer parallax__layer--fore">
+          <div class="title">
+            <h2 style='font-size: 60pt'>Contact</h2>
+            <a target='_blank' href='https://www.linkedin.com/in/jjvmr/'>
+              <img src="../img/linkedin.png" alt="github">
+            </a>
+            <a target='_blank' href='https://github.com/jjvmr'>
+              <img src="../img/github.png" alt="linkedin">
+            </a>
+          </div>
+        </div>
+        <div class="parallax__layer parallax__layer--base" id='contact'>
+        </div>
+      </div>
+
+    </div>
+  
+  </body>
+</html>
