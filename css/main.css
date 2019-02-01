@@ -124,7 +124,8 @@ h2 {
   letter-spacing: 10px;
   font-size: 60pt;
   font-family: 'Open Sans';
-  margin: 40px
+  margin: 40px;
+  color: black;
 }
 
 h3 {
@@ -132,9 +133,10 @@ h3 {
 }
 
 p, li {
-  font-size: 10pt;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 12pt;
+  font-family: 'Lato', sans-serif;
   font-weight: 100;
+  list-style: none;
 }
 
 img {
@@ -203,7 +205,8 @@ button:hover {color: white}
 /* slide over group 4 and 6 */
 #group5 {z-index: 3}
 #group5 .parallax__layer--base {
-  background-image: url('../img/machupicchu_blur--landscape-background.jpg');
+  background-color: rgb(251, 240, 202);
+
 }
 
 
@@ -230,26 +233,24 @@ button:hover {color: white}
   font-size: 30pt;
 }
 
-
 .box {
-  width: 25%;
+  width: 20%;
   padding: 5px 20px 20px;
   color:white;
   margin: 10px;
   border-radius: 8px;
   background-color: rgba(224, 210, 140, 0.719);
-
-  /* box-shadow: 0 0 8px rgb(128, 128, 128); */
 }
 
 .block {
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 #back-canvas {
-  height: 480px;
+  height: 600px;
   width: 1200vh;
   background-color: rgba(98, 89, 81, 0.7)
 
